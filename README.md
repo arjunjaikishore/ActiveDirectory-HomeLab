@@ -3,12 +3,20 @@
 ## Description
 This is my Active Directory home lab where I set up a Windows Server 2019 Domain Controller and a Windows 10 client in VirtualBox. I configured AD DS, DNS, and DHCP to mimic how a real corporate network works. I also created a domain (`mydomain.com`), added organizational units, and made user accounts that could log into the client machine. Along the way, I practiced troubleshooting DNS and ensuring domain-joined clients could resolve and access external domains like google.com.
 
-### Technologies Used
+## Technologies Used
 - Windows Server 2019  
 - Windows 10  
 - VirtualBox (NAT + Internal Network)  
 - Roles: AD DS, DNS, DHCP  
-- Active Directory Users and Computers (ADUC)  
+- Active Directory Users and Computers (ADUC)
+
+## What I Learned
+- I learned how to promote a Windows Server to a Domain Controller and create a domain from scratch.  
+- I practiced managing users and groups in Active Directory Users and Computers.  
+- I saw how DHCP, DNS, and AD all work together to support domain-joined clients.  
+- Fixing a DNS misconfiguration through DHCP scope options showed me how important proper configuration is.  
+- This lab gave me a hands-on look at how corporate IT environments handle identity, authentication, and network management.  
+  
 
 ## Walk-through
 
@@ -39,10 +47,3 @@ This is my Active Directory home lab where I set up a Windows Server 2019 Domain
 
 **10. Logged in as a Domain User** – Restarted Client1 and logged in with a domain user account created in ADUC.  
 ![Client login domain user](images/8.png)
-
-## What I Learned
-- I learned how to promote a Windows Server to a Domain Controller and create a domain from scratch.  
-- I practiced managing users and groups in Active Directory Users and Computers.  
-- I saw how DHCP, DNS, and AD all work together to support domain-joined clients.  
-- Fixing a DNS misconfiguration through DHCP scope options showed me how important proper configuration is.  
-- This lab gave me a hands-on look at how corporate IT environments handle identity, authentication, and network management.  
